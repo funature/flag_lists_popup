@@ -1,0 +1,9 @@
+name = Flag Lists Popup
+description = Provides a popup menu for Flag Lists module.
+package = Flags
+
+dependencies[] = flag_lists
+
+; Purposively added for feature development.
+version = 6.x-1.x-dev
+core = 6.x

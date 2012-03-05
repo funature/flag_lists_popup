@@ -1,0 +1,116 @@
+/**
+ * @file
+ * The Flag lists popup module css file.
+ */
+
+.flp-wrapper { /* The wrapper holds its insides together */
+  position: relative;
+}
+.flp-popup {
+  position: absolute;
+  z-index: 200;
+  display: none;
+}
+
+/* Facebook UI */
+.flp-fbui-box {
+  padding-top: 10px;
+  min-width: 160px;
+  max-width: 200px;
+}
+.flp-fbui-box * {
+  /* text */
+  color: #333333;
+  direction: ltr;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  line-height: 1.28;
+  text-align: left;
+  /* layout */
+  padding: 0;
+  margin: 0;
+}
+.flp-fbui-arrow {
+  /* layout */
+  width: 16px;
+  height: 9px;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  margin-left: 0;
+  overflow: hidden;
+  /* visual */
+  background: url("https://s-static.ak.facebook.com/rsrc.php/v1/yD/r/K8-2F4r57by.png") no-repeat scroll -108px -392px;
+}
+.flp-fbui-list {
+  /* layout */
+  position: relative;
+  padding: 5px 0;
+  /* visual */
+  border-color: rgba(0, 0, 0, 0.45) rgba(0, 0, 0, 0.45) #666666;
+  border-style: solid;
+  border-width: 1px;
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+.flp-fbui-list li {
+  /* visual */
+  background: none repeat scroll 0 0 transparent;
+  list-style-image: none;
+  list-style-type: none;
+}
+.flp-fbui-list a:link,
+.flp-fbui-list a:visited,
+.flp-fbui-list a:active {
+  /* text */
+  color: #111111;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 16px;
+  /* layout */
+  padding: 1px 16px 1px 22px;
+  display: block;
+  /* visual */
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.flp-fbui-list a:hover {
+  /* text */
+  color: white;
+  /* visual */
+  background-color: #6D84b4;
+  border-color: #3B5998;
+  outline: medium none;
+}
+.flp-fbui-list a.flp-selected {
+  /* visual */
+  background: url("https://s-static.ak.facebook.com/rsrc.php/v1/yu/r/6NHt8H5uyPf.png") no-repeat scroll left 4px transparent;
+}
+.flp-fbui-list a:hover.flp-selected {
+  /* visual */
+  background: url("https://s-static.ak.facebook.com/rsrc.php/v1/yu/r/6NHt8H5uyPf.png") no-repeat scroll left -56px #6D84b4;
+}
+.flp-fbui-list li.flp-create {
+  /* layout */
+  padding-left: 20px;
+  background: url("images/plus.png") no-repeat scroll left 4px transparent;
+}
+.flp-fbui-list li.flp-create input.flp-error {
+  /* text */
+  color: red;
+  /* visual */
+  border: 1px solid red;
+}
+.flp-fbui-list li.flp-create input {
+  /* text */
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  color: #333333;
+  /* layout */
+  margin: 1px 5px 1px 3px;
+  padding: 1px 2px 2px 2px;
+  min-width: 100px;
+  /* visual */
+  border: 1px solid #bdc7d8;
+  outline: none;
+}
